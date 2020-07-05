@@ -1,7 +1,6 @@
 ﻿
 using System.Collections.Generic;
 using System.Text;
-using System;
 
 namespace DataStructures
 {
@@ -27,7 +26,8 @@ namespace DataStructures
 
         // condition related
         public int Size() => elements.Count; 
-        public bool Empty() => Size() == 0; 
+        public bool Empty() => Size() == 0;
+        public bool Contains(E elem) => elements.Contains(elem);
 
         //overriden from object
         public override string ToString()

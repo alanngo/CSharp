@@ -9,6 +9,7 @@ namespace DataStructures
 
         // add a print function because ToString isn't overriden in class
         static void Print<E>(ICollection<E> collection){foreach (E o in collection) Log(o);}
+        
 
         static void Lists()
         {
