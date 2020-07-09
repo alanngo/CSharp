@@ -101,7 +101,7 @@ namespace DataStructures
             dq.PopBack();
             dq.PopFront();
             Log(dq);
-            Log("Size of deque: "+dq.Size());
+            Log("Size of deque: "+dq.Size);
         }
         
         static void Main(string[] args)

@@ -21,25 +21,25 @@ namespace DataStructures
 
 
         // access related
-        public E Front() => elements[0]; 
-        public E Back() => elements[^1]; 
+        public E Front { get => elements[0]; } 
+        public E Back { get => elements[^1]; }
 
         // condition related
-        public int Size() => elements.Count; 
-        public bool Empty() => Size() == 0;
+        public int Size { get => elements.Count; }
+        public bool Empty { get => Size == 0; }
         public bool Contains(E elem) => elements.Contains(elem);
 
         //overriden from object
         public override string ToString()
         {
-            if (Empty())
+            if (Empty)
                 return "EMPTY DEQUE\n";
             
             StringBuilder sb = new StringBuilder();
-            sb.Append("FRONT-> ").Append(Front().ToString()).Append(" ");
+            sb.Append("FRONT-> ").Append(Front.ToString()).Append(" ");
             for (int i = 1; i <elements.Count-1; i++)
                 sb.Append(elements[i].ToString()).Append(" ");
-            sb.Append(Back().ToString()).Append(" <-BACK\n");
+            sb.Append(Back.ToString()).Append(" <-BACK\n");
 
             return sb.ToString();
         }
